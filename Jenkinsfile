@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'php composer.json install'
+                sh 'composer install'
             }
         }
         stage('Test') {
